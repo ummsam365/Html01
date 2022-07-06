@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Selector : Tag, id, class **</title>
+<style>
+	* { color: Indigo;
+		font-style: italic;
+	}
+	body { background-color: beige;
+	}
+	/* 합집합 */
+	h2, h3 { color: DarkGreen;
+	}
+	/* Form Tag */
+	input[type="text"] { color: gray; background: yellow;
+	}
+	input[type="password"] { color: red; background: black;
+	}
+	
+	#idTest { color: red; font-weight: normal;
+	}
+	
+	.c1 { color: black; }
+	.c2 { font-size: 20pt; }
+	.c3 { font-weight: bold; color: SaddleBrown; }
+	
+</style>
+</head>
+<body>
+<pre>
+<h2>Test1. Selector : *</h2>
+=> 모든 Tag 를 의미
+=> 초기화에 많이 이용됨 (실제 많이 이용됨)
+
+<h2>Test2. 기본 Tag</h2>
+	<h3>=> 단수적용 : 단독사용 -> h2</h3>
+	<h3>=> 복수적용 : h2, pre, p, ... -> 실제 많이 사용됨</h3>
+</pre>
+<hr>
+<h2>Test3. Form Tag</h2>
+	<form action="#">
+		ID : <input type="text"><br>
+		Name : <input type="text"><br>
+		Password: <input type="password"><br>
+	</form>	
+<hr>
+<h2 id="idTest">Test4. ID</h2>
+	<h4 id="idTest">=> Html 문서내에서 특정 Tag를 인식 : 유일성</h4>
+	<h4 id="idTest">=> 단, 유일하지 않은 경우 오류 발생은 없지만 JavaScript 에서 논리적 오류 발생</h4>
+	<h4 id="idTest">=> JavaScript 에서는 처음 1개의 id만 인식하기 때문</h4>
+	
+<h2 class=c1>Test5. Class</h2>
+	<h4 class="c1 c2">=> Html 문서내에서 여러개의 Tag를 인식</h4>
+	<h4 class="c1 c2">=> 문서내에서 중복을 허용하고, 하나의 Tag가 여러 클래스를 가질 수 있음</h4>
+	<h4 class='c1 c2 c3'>=> 스타일을 적용할때 많이 사용됨</h4>
+	<h4 class="c1 c3">=> 중복되는 속성은 뒤쪽 값이 우선</h4>
+	<ul class="c2">** 과일 **
+		<!-- li 에는 c2와 c3 가 적용됨 --> 
+		<li class="c3">사과
+		<li class="c3">딸기
+		<li class="c3">수박
+	</ul>
+</body>
+</html>

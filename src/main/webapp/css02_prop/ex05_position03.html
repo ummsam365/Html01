@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Absolute Position 활용 **</title>
+<style>
+	#container {
+		width:100%; height:70vh;
+		border: 3px solid black;
+		overflow: hidden;
+		position: relative;
+	}
+	.circle {
+		width:200px; height:200px;
+		border-radius: 50%;
+		position:absolute;
+	}
+	#red {
+		background-color: red;
+		left: 20px; top: 20px;
+		z-index: 100;
+	}
+	#green {
+		background-color: green;
+		right: 20px; top: 20px;
+		z-index: 90;
+	}
+	#blue {
+		background-color: blue;
+		right: 20px; bottom: 20px;
+		z-index: 80;
+	}
+	#yellow {
+		background-color: yellow;
+		left: 20px; bottom: 20px;
+		z-index: 70;
+	}
+	#red:hover { z-index: 1000; }
+	#green:hover { z-index: 1000; }
+	#blue:hover { z-index: 1000; }
+	#yellow:hover { z-index: 1000; }
+	
+</style>
+</head>
+<body>
+<h2>** Absolute Position 활용 **</h2>
+=> Parent Position : relative<br>
+=> Child Position : absolute<br>
+<div id="container">
+	<div id="red" class="circle"></div>
+	<div id="green" class="circle"></div>
+	<div id="blue" class="circle"></div>
+	<div id="yellow" class="circle"></div>
+</div>
+
+</body>
+</html>

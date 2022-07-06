@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Join Us</title>
+<style>
+	* { margin: 0; padding: 0; border: 0; }
+	body { background-color: whitesmoke; }
+	#logo { font-size: 70px; color: limegreen; text-align: center;
+			margin-top: 50px; margin-bottom: 50px; }
+	
+	#container { width: 600px;   margin: 0 auto;}
+	div div{ margin:25px auto; } 
+	.contentName {font-size:22px; font-weight:bold; margin-left: 3px; }
+	
+	/* 입력요소 크기지정 */
+	input { width: 600px; height: 50px; border: 2px solid lightgray; font-size: 15px}
+	.select { width: 600px; height: 50px; ; font-size: 15px; border: 2px solid lightgray;}
+	.birth { width: 190px; height: 50px; border: 2px solid lightgray; }
+	.tech { height: 110px; }
+	
+	/* 성별 */	
+	#male, #female { width:50px; height: 15px;}
+	.radio_box	{ display: inline-block; }
+		
+	select { box-sizing: content-box; }
+	/* box-sizing -> 요소의 너비와 높이를 계산하는 방법을 지정
+					 - content-box : 기본 CSS 박스크기 결정법 (border, padding 제외) 
+					 - border-box : border, padding 크기도 요소의 크기에 포함 (즉, padding값이 커져도 전체크기 변화 없음) */
+
+	input:focus, select:focus { outline-color: limegreen; border-color: limegreen;} 
+	/* outline -> style, width, color 속성가짐 (그러나 전체크기에 영향없음: 컨텐츠영역이 줄어듦) 
+	   border -> style, width, color 속성가짐 (그러나 전체크기에 영향줌)  */
+	
+	input[type="submit"] { color: white; background-color: limegreen; margin-bottom: 50px; }
+	input[type="submit"]:hover {cursor: pointer; } 
+			
+	/* ** ime-mode
+	=> textBox의 입력문자를 제어하는 속성
+	=> 아이디 입력박스에 특수문자가 입력되지 않도록 하거나, 숫자입력박스에는 한/영등의 문자열이 들어가지 않도록..
+	=> 속성값
+		1. 기존 값  : style = "ime-mode:duto"
+		2. 기본 값  : style = "ime-mode:normal"
+		3. IME기본 설정 언어로 입력 > 한글 우선 : style = "ime-mode:active"
+		4. 영문 우선(한영키 사용 가능) : style = "ime-mode:inactive"
+		5. 영문 우선(한영키 사용 가능) : style = "ime-mode:disabled"
+ 	=> 표준이 아니어서 크롬이나 엣지 등의 신버전(2016년 이후) 브라우저에서는 기능이 먹히지 않을 수 있음.
+ 	*/		
+			
+</style>
+
+</head>
+<body>
+<div id="logo"><b>Join Us</b></div>
+<div id="container">
+	<form action="#" method="get">
+		<div>
+			<span class="contentName">아이디</span> <br>
+			<input type="text" name="id"; maxlength="15" placeholder="15글자 이내로 입력하세요."> <br>
+		</div>
+		<div>
+			<span class="contentName">비밀번호</span> <br>
+			<input type="password" name="password"; maxlength="20" placeholder="소문자,대문자,특수문자가 모두 포함되어야합니다.">
+		</div>
+		<div>
+			<span class="contentName">비밀번호 재확인</span> <br>
+			<input type="text" name="passwordCheck" maxlength="20" >
+		</div>
+		<div>
+			<span class="contentName">이름</span> <br>
+			<input type="text" name="name" maxlength="15" >
+		</div>
+		<div>
+			<span class="contentName">생년월일</span> <br>
+			<input class="birth" type="text" name="birthYear" maxlength="4" placeholder="년(4자)"> 
+			<select class="birth" name="birthMonth" >
+				<option value="월">월</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+			<input class="birth" name="birthDay" type="text"  maxlength="2" placeholder="일")> 
+		</div>
+		<div class="radio_box">  
+			<span class="contentName">성별</span>
+			<input  type="radio" name="gender" value="f" checked id="female"><label for="female">여성</label>&nbsp;&nbsp; 
+			<input  type="radio" name="gender" value="m" id="male"><label for="male">남성</label>
+		</div>
+		<div>
+			<span class="contentName">본인확인이메일</span><span style="color: gray;">(선택)</span> <br>
+			<input type="text" name="email" maxlength="15" placeholder="선택입력">
+		</div>
+		<div>
+			<span class="contentName">보유기술</span><span style="color: gray;">(다중선택가능)</span> <br>
+			<select class="select tech" name="tech" multiple="multiple" size="6">
+				<option value="1">Java</option>
+				<option value="2">MySQL</option>
+				<option value="3">Oracle</option>
+				<option value="4">HTML</option>
+				<option value="5">CSS</option>
+				<option value="6">JavaScript</option>
+			</select>
+		</div>
+		
+		<input type="submit" value="가입하기">
+	</form>
+
+</div>
+
+</body>
+</html>

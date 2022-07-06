@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Background Image Test 02 **</title>
+<style>
+	#container {
+		/* 
+		width:100%;  height: 100%; 
+		=> body 크기를 지정하지 않은경우 body 크기는 컨텐츠 영역만 인식됨 
+		=> vw,  vh 사용과 비교 */ 
+		width:100vw;  height: 100vh;    
+		background-image: url("../image/wintersea.jpg"), url("../image/snow.jpg") ;
+		background-attachment: scroll;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center;
+	}
+	h2 { text-align: center; }
+
+</style>
+</head>
+<body>
+<div id="container">
+	<div>
+		<h2>** Background Image Test 02 **</h2>
+		<h2>=> 점심 메뉴는 ????</h2>
+	</div>
+	<pre>
+	** Layer **
+ 	=> 이미지를 여러개를 지정했을때 각각의 그림을 레이어라고 부릅니다.  
+	=> 두개의 이미지는 겹쳐 있으며 앞쪽이 없으면 뒤쪽이 나타남. 
+	</pre>
+</div>
+</body>
+</html>

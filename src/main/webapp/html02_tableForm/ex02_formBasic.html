@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Form Basic **</title>
+</head>
+<body>
+<h2>** Form 기본 Tag **</h2>
+<pre>
+=> form Tag 는 서버로 정보를 전송하는데 필요한 속성을 가지고 있음 
+   action="목적지_요청명" method="전송방식_Get/Post"
+=> id, name 모두 유일성 , 
+   id 는 문서내부에서 사용, name 은 문서외부 (특히 서버) 에서 사용   
+=> size는 Tag 길이, maxlength는 입력값의 길이
+
+** 하나의 html 문서내에 여러 Form Tag set  사용가능
+** 다양한 입력 Tag 소개 => https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input
+</pre>
+<hr>
+<form action="search" method="get">
+	I D : <input type="text" id="id" name="id" size="20"    
+				 maxlength="10"	placeholder="영문,숫자만 가능_Value우선"><br>
+	Password: <input type="password" id="password" name="password" size="20"
+				 maxlength="10" value="12345" placeholder="특수문자 반드시 포함"	><br>
+	<hr>
+	** 다양한 input Tag **<br>
+	=> Radio Button : 그룹중 1개만 선택, name이 그룹명<br>
+	
+	* 성별 *<br>
+	<input type="radio" name="gender" value="1">남성
+	<input type="radio" name="gender" value="2" checked>여성
+	<input type="radio" name="gender" value="3">무선택<br>
+	
+	* 메뉴 *<br>
+	<input type="radio" name="menu" value="a" checked="checked">짜장면
+	<input type="radio" name="menu" value="b">짬뽕
+	<input type="radio" name="menu" value="c">볶음밥<br>
+	<hr>
+	=> CheckBox : 다중선택 가능, name이 그룹명<br>
+	* 디저트 : 원하는거 모두 고르세요 *<br>
+	<input type="checkbox" name="dessert" value="커피">커피
+	<input type="checkbox" name="dessert" value="레몬티">레몬티
+	<input type="checkbox" name="dessert" value="과일">과일
+	<input type="checkbox" name="dessert" value="쵸코케익">쵸코케익<br>
+	
+	* 취미 *<br>
+	<input type="checkbox" name="hobby" value="1">Html
+	<input type="checkbox" name="hobby" value="2">CSS
+	<input type="checkbox" name="hobby" value="3">JavaScript
+	<input type="checkbox" name="hobby" value="4">Java
+	<input type="checkbox" name="hobby" value="5">Oracle<br>
+	<hr>
+	=> Select : 단일선택<br>
+	<select name="grade">
+		<option value="A">관리자
+		<option value="B">나무
+		<option value="C">잎새
+		<option value="D">새싹
+	</select>
+	<br><br>
+	=> Select : 다중선택<br>
+	<select name="job" multiple="multiple" size="5">
+		<option value="1">개발자
+		<option value="2">강사
+		<option value="3">작곡가
+		<option value="4">성악가
+		<option value="5">여행가
+		<option value="6">디자이너
+		<option value="7">사업가
+	</select>
+	<br><br>
+	<hr>
+	=> TextArea<br>
+	<textarea rows="5" cols="50" name="memo">
+	100자 이내로 입력 하세요 ~~
+	</textarea>
+	<br>
+	=> Date<br>
+	<input type="date" name="birthday"><br>
+	=> File<br>
+	<input type="file" name="image"><br>
+	<hr>
+	** 동작(서버로 전송) **<br>
+	<input type="submit" value="전송[서버로전송됨]">&nbsp;&nbsp;
+	<input type="button" value="버튼[기능구현필요]">&nbsp;&nbsp;
+	<input type="reset" value="취소[입력값 Clear]">
+</form>
+<hr>
+test : <input type="text" name="test" id="test" size="20" 
+		placeholder="위 form 의 submit 과는 무관">
+</body>
+</html>

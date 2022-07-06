@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+	
+	* {
+		margin: 0 auto; padding: 0;
+		font-family: 'Black Han Sans', sans-serif;
+	}
+	
+	ul, li {
+		list-style: none;
+		cursor: pointer;
+	}
+	
+	header {
+		width: 900px;
+		height: 150px;
+		background-color: #89d0b4;
+	}
+	
+	nav {
+		width: 900px;
+		height: 50px;
+		background-color: #d089cf;
+	}
+	
+	section {
+		width: 900px;
+		height: 350px;
+		background-color: #b3d089;
+	}
+	
+	footer {
+		width: 900px;
+		height: 150px;
+		background-color: #89d0b4;
+		text-align: center;
+	}
+	
+	header h1 {
+		position: relative;
+		top: 40%;
+		text-align: center;
+		color : #d089cf;
+	}
+	
+	.menuL, .menuR, .li1 {
+		float: left;
+	}
+	
+	.menuL {
+		width: 200px;
+		margin-top: 15px;
+	}
+	
+	.menuR {
+		width: 150px;
+		margin-left: 550px;
+		margin-top: 15px;
+	}
+	
+	.menuR>li {
+		float: left;
+	}
+	
+	.ul2 {
+		position: absolute;
+		background-color: #d089cf;
+		margin: 0px;
+    	padding: 5px;
+	}
+	
+	.li1 {
+		float: left;
+		list-style: none;
+		margin: 0 20px;
+		color: white;
+	}
+	
+	nav a {
+    	text-decoration: none;
+		color: white;
+		margin: 10px;
+	}
+	
+	.menuR a:hover {
+		color: #89d0b4;
+	}
+	
+	.ul2 {
+		display: none;
+	}
+	
+	.li1:hover {
+		color: #89d0b4;
+	}
+	
+	.li2 a:hover {
+		color: #89d0b4;
+	}
+	
+	.li1:hover ul, .ul2:hover {
+		display: block;
+	}
+	
+	iframe {
+		width: 100%; height: 100%;
+		border: none;
+	}
+	
+	footer div {
+		position: relative;
+		top: 20%;
+	}
+	
+</style>
+</head>
+<body>
+<header>
+	<h1>화면구현 TEST</h1>
+</header>
+<nav>
+	<ul class="menuL">
+		<li class="li1">Html5
+			<ul class="ul2">
+				<li class="li2"><a href="ex03_animation.html" target="section">Hello</a></li>
+				<li class="li2"><a href="ex03_construction.html" target="section">Special</a></li>
+				<li class="li2"><a href="ex03_construction.html" target="section">Image</a></li>
+			</ul>
+		</li>
+		<li class="li1">Css3
+			<ul class="ul2">
+				<li class="li2"><a href="ex03_animation.html" target="section">Animation</a></li>
+				<li class="li2"><a href="ex03_construction.html" target="section">Transition</a></li>
+				<li class="li2"><a href="ex03_construction.html" target="section">Transform</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="menuR">
+		<li><a href="ex02_main.html" target="section">Home</a></li>
+		<li><a href="ex04_joinForm.html" target="_self">Join</a></li>
+	</ul>
+</nav>
+<section>
+	<iframe name="section" src="ex02_main.html"></iframe>
+</section>
+<footer>
+	<div>
+		<h3>footer</h3>
+		<p>주소 : 경기도 성남시 분당구 금곡동 그린 컴퓨터 아카데미</p>
+		<p>연락처 : 010-0000-0000</p>
+		<p><a href="mailto:ummsam@naver.com">e메일 문의</a></p>
+	</div>
+</footer>
+</body>
+</html>

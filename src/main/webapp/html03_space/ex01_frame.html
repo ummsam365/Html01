@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Layout01 Frame : 화면분할, 여러 Html 문서 적용 **</title>
+<!-- => 여러 Html 문서를 포함하기때문에 body Tag 가 필요없음 	-->
+</head>
+<frameset rows="20%, 60%, 20%" frameborder="yes">
+	<frame src="../html01/ex05_marQuee.html">
+	<frameset cols="25%, 75%">
+		<frame src="../html01/ex04_02ulolLink.html">
+		<frame src="../html01/ex04_03ulolInsa.html" name="main">
+	</frameset>
+	<frame src="footer.html"> 
+</frameset>
+</html>

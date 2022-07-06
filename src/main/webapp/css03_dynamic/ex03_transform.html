@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Transform **</title>
+<style>
+	div { 	display:inline-block; padding:5px;
+			color: white; background-color: olivedrab;
+		}
+	/* Transform 기본적용 */
+	div#rotate { transform: rotate(20deg) translateX(100px) scaleX(2); }
+	div#skew { transform: skew(0deg, -20deg); }  /* y축:0, x축:-20 */
+	div#translate { transform: translate(100px, 200px); }
+	div#scale { transform: scale(3,1); }  /* w:3배, h:1배	 */
+	
+	/* hover 추가적용 */
+	#rotate:hover { transform: rotate(80deg) translateX(100px) scaleX(2); }
+	#skew:hover { transform: skew(-10deg, -60deg); }
+	#translate:hover { transform: translate(50px, 100px); }
+	#scale:hover { transform: scale(1,3); }
+	
+	/* mouse click 추가적용 */
+	#scale:active { transform: rotate(45deg); color:red; }
+	
+</style>
+</head>
+<body>
+<h2>** 다양한 Transform **</h2>
+=> 아래는 회전(rotate), 기울임(skew), 이동(translate), 확대/축소(scale)가 적용됨.<br>
+=> 마우스를 올리면 추가적 변환이 일어남.<br> 
+<hr>
+<div id="rotate">Rotate(20deg):회전</div>
+<div id="skew">Skew(0deg,-20deg):기울임</div>
+<div id="translate">TranslateY(100px):이동</div>
+<div id="scale">Scale(3,1):크기</div>
+
+</html>

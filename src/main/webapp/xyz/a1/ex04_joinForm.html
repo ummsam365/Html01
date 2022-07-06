@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Programmer" content="김지후">
+<title>** Hello **</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>form1</title>
+</head>
+<body>
+    <div id="container">
+        <div id="main_text">
+            <h3><a href="ex01_home.html">JoinUs</a></h3>
+        </div>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>필수입력사항</legend>
+                <div class="input_box">
+                    <div class="label_text">
+                        <label for="id">아이디</label>
+                    </div>
+                    <div class="id_box">
+                        <input type="text" id="id" name="id" placeholder="ID를 입력하세요">
+                    </div>
+                </div>
+                <div class="input_box">
+                    <div class="label_text">
+                        <label for="pw">비밀번호</label>
+                    </div>
+                    <div class="pw_box">
+                        <input type="password" name="pw" id="pw" placeholder="비밀번호를 입력하세요.">
+                    </div>
+                </div>
+                <div class="input_box">
+                    <div class="label_text">
+                        <label for="pw_re">비밀번호 재확인</label>
+                    </div>
+                    <div class="pw_re_box">
+                        <input type="password" name="pw_re" id="pw_re" placeholder="비밀번호를 다시 입력하세요.">
+                    </div>
+                </div>
+                <div class="input_box">
+                    <div class="label_text">
+                        <label for="user_name">이름</label>
+                    </div>
+                    <div class="name_box">
+                        <input type="text" id="user_name" name="user_name" placeholder="이름을 입력하세요.">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>선택입력사항</legend>
+                <div class="input_box radio_box">
+                    <div class="male_text label_text">
+                        <h5 id="male_text">성별</h5>
+                    </div>
+                    <div class="radio_btn">
+                        <div class="radio_box_male">
+                            <label for="man">남자</label>
+                            <input type="radio" name="male" id="man" value="man" checked>
+                        </div>
+                        <div class="radio_box_male">
+                            <label for="women">여자</label>
+                            <input type="radio" name="male" id="women" value="women">
+                        </div>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <div class="label_text">
+                        <label for="email">이메일</label>
+                    </div>
+                    <div class="email_box">
+                        <input type="text" name="email_first" id="email">
+                        <h3>@</h3>
+                        <select name="email_last" id="email_last">
+                            <option value="naver">naver.com</option>
+                            <option value="daum">daum.net</option>
+                            <option value="google">google.com</option>
+                            <option value="nate">nate.com</option>
+                            <option value="kakao">kakao.com</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <div class="label_text">
+                        <label for="doit">보유기술<span>다중선택가능</span></label>
+                    </div>
+                    <select multiple id="doit_box" name="skill">
+                        <option value="java" class="doit_value">Java</option>
+                        <option value="html" class="doit_value">Html5</option>
+                        <option value="css" class="doit_value">Css3</option>
+                        <option value="ecma6" class="doit_value">Ecma6</option>
+                        <option value="c++" class="doit_value">C++</option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="submit_box input_box">
+                <button type="submit">
+                    가입하기
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+</body>
+</html>

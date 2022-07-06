@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Transition **</title>
+<style>
+	h1 { transition  : font-size 5s ease ; }
+		/*  대상프로퍼티-> all:모든프로퍼티 
+		    duration -> 5초 동안  
+		    timing-function-> ease (기본값)
+		    				 :느리게 시작해서 점점 빨라지다가 다시 느려지면서 종료  
+		     				 :더 부드럽게 애니메이션이 동작하도록함. 
+		    */	
+	h1:hover { font-size: 500%; } 
+	/* 마우스 hover 시에 5초에 걸쳐 500%까지 글자 키우는 전환 효과 */
+</style>
+
+</head>
+<body>
+<h2>** Transition **</h2>
+=> 태그에 적용된 style 값의 변화를 서서히 진행시켜 애니메이션 효과 생성<br>
+=> 
+<hr>
+<h1>Transition</h1>
+=> 마우스 hover 시에 글자크기를 현재 크기에서 500% 크기로 전환 진행
+
+</body>
+</html>

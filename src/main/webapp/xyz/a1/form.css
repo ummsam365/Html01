@@ -1,0 +1,253 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #F2F2F0;
+}
+
+body {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#container {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F26E50;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 31px 25px 15px 15px rgba(0,0,0,0);
+}
+
+#container > form {
+    width: 80%;
+    height: 100%;
+}
+
+#main_text {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_text h3 {
+    font-size: 50px;
+    letter-spacing: 0.3em;
+    transition: all .3s ease-in;
+}
+
+#main_text h3:hover {
+    transition: all .3s ease-in-out;
+    padding-right: 10px;
+}
+
+#main_text h3:hover::after {
+    content: "HOME";
+    font-size: 10px;
+    text-align: center;
+    color: #000;
+}
+
+.input_box {
+    width: 100%;
+    height: 70px;
+    margin: 5px;
+}
+
+.label_text {
+    font-size: 15px;
+    font-weight: bold;
+    margin : 10px 0px;
+}
+
+label > span {
+    font-size: 10px;
+    margin: 0px 10px;
+    color: #fff;
+    background-color: red;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.input_box input {
+    width: 90%;
+    height: 15px;
+    background: blanchedalmond;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000;
+    transition: all .3s ease-in-out;
+}
+
+fieldset {
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid yellow;
+    margin-top: 30px;
+    transition: all .2s ease-in-out;
+}
+
+fieldset:hover {
+    background-color: #8BA5D9;
+    border: 0px solid ;
+    box-shadow: -1px 0px 14px -3px #000000;
+}
+
+legend {
+    padding: 10px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.input_box input:focus {
+    box-shadow: -1px 0px 14px -3px #000000;
+    background-color: #F2C230;
+    border: 2px solid #80ff49;
+}
+
+
+.input_box input::placeholder {
+    font-weight: bold;
+}
+
+.radio_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.radio_btn {
+    display: flex;
+}
+
+.male_text {
+    margin-top: 10px;
+}
+
+#male_text {
+    font-size: 15px;
+}
+
+.radio_btn .radio_box_male > label {
+    font-size: 15px;
+    width: 100%;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.radio_btn > .radio_box_male {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.radio_btn .radio_box_male > input { 
+    width: 15px;
+}
+
+.radio_btn .radio_box_male > input:focus {
+    box-shadow: none;
+}
+
+.email_box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.email_box input {
+    width: 70%;
+    height: 15px;
+}
+
+.email_box h3 {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.email_box select {
+    width: 40%;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    color: #000;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.email_box select > option {
+    color: #000;
+}
+
+.email_box select:focus {
+    box-shadow: -1px 0px 14px -3px #000000;
+    background-color: #F2C230;
+}
+
+.submit_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.submit_box button {
+    width: 50%;
+    height: 80%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #E9A7F2;
+    transition: all .3s ease-in-out;
+    color: #000;
+}
+
+.submit_box button:hover {
+    background-color: #80ff49;
+}
+
+#doit_box {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+#doit_box:focus {
+    box-shadow: -1px 0px 14px -3px #000000;
+    background-color: #F2C230;
+}
+
+.doit_value {
+    color: #000;
+    background-color: blanchedalmond;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Join Us</title>
+<style>
+	* { margin:0; padding:0; background:WhiteSmoke; }
+	h1 {  text-align: center; height: 100px; line-height: 100px; font-size: 40px;}
+	h1 a { text-decoration:none; color:#1ddb16; font-weight: bold;}
+	button { width:100px; height:30px; outline-color:lightgray; background: #1ddb16; color:white; border-radius: 7px;}
+	h1:hover{cursor:pointer;}
+	#send { margin:auto; background: #1ddb16; text-decoration: none;}
+	#numberinput { width:280px; }
+	#container, #container2{width:410px; margin: 0 auto; display: flex; flex-direction: column; justify-content: space-evenly; }
+	input{width:400px; height:30px; border:2px solid lightgray; background: white; border-radius: 7px;}
+	#male, #female{ width:15px; height: 15px;}
+	#year { background: white; width:138px; height: 30px; border:2px solid lightgray; }
+	#month { background: white; width:115px; height: 34px; border:2px solid lightgray;}
+	#day { background: white; width:115px; height: 30px; border:2px solid lightgray; }
+	.have { width:400px; background: white; border-radius: 7px;}
+	#have { width:405px; border:2px solid lightgray;}
+	input:focus,select:focus {outline-color: limegreen; border-color: limegreen;}
+	#send {width:440px; color:white; margin-bottom: 50px;}
+	#send:hover { cursor:pointer; background: lime;}
+	fieldset {  padding:15px; }
+	#choice { color:gray; font-size: 13px;}
+	
+</style>
+</head>
+<body>
+<h1><a href="ex01_home.html">Join Us</a></h1>
+<form action="#" >
+<div id="container">
+<fieldset style="border-left-width:2; border:2 solid darkgreen;">
+	<legend style="color:garkgray;">** 필수입력사항 **</legend>
+	<div>
+	<b>아이디</b>
+		<input type="text" placeholder=" 15자 이내로 입력하세요." maxlength="14">
+	</div><br>
+	<div>
+	<b>비밀번호</b>
+		<input type="password" placeholder=" 소문자, 대문자, 특수문자가 모두 포함되어야 합니다.">
+	</div><br>
+	<div><b>비밀번호 재확인</b>
+		<input type="password">
+	</div><br>
+	<div><b>이름</b>
+		<input type="text">
+	</div><br></fieldset></div><br>
+<div id="container2">
+<fieldset style="border-left-width:2; border:2 solid darkgreen;">
+	<legend style="color:garkgray;" >** 선택입력사항 **</legend>
+	<div>
+	<b>생년월일</b><br>
+	<input id="year"  name="year" type="text" maxlength="2022" min="1910" placeholder=" 년(4자)">
+		<select id="month" name="month">
+		<option>1월</option><option>2월</option>
+		<option>3월</option><option>4월</option>
+		<option>5월</option><option>6월</option>
+		<option>7월</option><option>8월</option>
+		<option>9월</option><option>10월</option>
+		<option>11월</option><option>12월</option>
+		</select>
+		<input id="day" type="text" maxlength="31" min="1" placeholder=" 일" name="day">
+	</div><br>
+	<div>
+		<b>성별 &nbsp;&nbsp;&nbsp;</b>
+		<input type="radio" name="gender" id="male"><label for="male"> 남성</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="gender" id="female" checked="checked"><label for="female" > 여성</label>
+	</div><br>
+
+	<div>
+	<b>보유기술</b><label id="choice"> (다중선택가능)</label>
+		 	<select id="have" multiple="multiple" size="4">
+			<option value="1" class="have"> java
+			<option value="2" class="have"> MySQL
+			<option value="3" class="have"> Oracle
+			<option value="4" class="have"> Html
+			<option value="5" class="have"> CSS
+			<option value="6" class="have"> Javescript
+		</select>
+	</div><br></fieldset><br>
+	<div>
+	<input id="send" type="submit" value="가입하기">
+</div></div>
+</form>
+</body>
+</html>

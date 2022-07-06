@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>이미지 테두리 만들기</title>
+<meta charset="UTF-8">
+<style>
+p { align-content:center;
+	background: gainsboro;
+	width: 200px;
+	height: 60px;
+	padding: 10px;
+	border: 20px solid DarkGreen; /*border-width와 border-style 동시 지정 */
+	font-size: 16pt;
+}
+
+#round {
+	border-image: url(../image/border.jpg) 30 round;
+	line-height: 60px;
+	text-align: center;
+}
+
+#repeat {
+	border-image: url(../image/border.jpg) 30 repeat;
+	line-height: 60px;
+	text-align: center;
+}
+
+#stretch {
+	border-image: url(../image/border.jpg) 30 stretch;
+	line-height: 60px;
+	text-align: center;
+}
+
+p:nth-child(n):hover {
+	background-color: darkgreen;
+}
+</style>
+</head>
+<body>
+
+		<h2><b>이미지 테두리 만들기</b></h2>
+		<hr>
+		<h3><b>** 원본 Image **</b></h3>
+	<img src="border.jpg">
+	<hr>
+
+	
+	<p id="round">** Round Style **</p>
+	<p id="repeat">** Repeat Style **</p>
+	<p id="stretch">** Stretch Style **</p>
+</body>
+</html>

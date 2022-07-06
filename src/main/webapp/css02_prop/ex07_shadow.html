@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Shadow 적용 Test **</title>
+<style>
+	div { font: normal 24px 맑은고딕; }
+	/* font 단축 프로퍼티 : font-style, font-weight, font-size, font-family 
+						 style, weight 생략가능 	*/
+	.dropText { color:gray; text-shadow: 3px 3px; }
+	.redText { text-shadow: 3px -3px red; }
+	.blurText { text-shadow: 3px 3px 5px blue; }
+	.glowEffect { text-shadow: 0px 0px 3px green; }
+	.wordArtEffect { color:white; text-shadow: 0px 0px 3px navy; }
+	.threeDEffect { color:white; text-shadow: 2px 2px 4px black; }
+	.multiEffect { color:yellow; 
+				   text-shadow: 2px 2px 2px black,
+				   				0px 0px 25px blue,
+				   				0px 0px 5px darkblue; }
+	.box { width:150px; height:70px;
+		   padding: 10px;
+		   border: 10px solid lightgray;
+		   background-image: url("../image/jjang9.gif");
+		   background-size: 100% 100%;
+		   background-repeat: no-repeat;
+	   }
+	.red { box-shadow: 5px 5px red; }			   				
+	.blur { box-shadow: 5px 5px 10px green; }	
+	.multi { box-shadow: 2px 2px 2px black,
+						 0px 0px 25px blue,
+						 0px 0px 5px purple; }
+						 
+	/* Visibility Test => span에 마우스 닿으면 사라지도록 */				 
+	span:hover { visibility: hidden; }					 
+</style>
+</head>
+<body>
+<h2>1. Text Shadow</h2>
+<hr>
+<div class="dropText">Drop Shadow <span> , Visibility</span></div>
+<div class="redText">Color Shadow</div>
+<div class="blurText">Blur Shadow</div>
+<div class="glowEffect">Glow Effect</div>
+<div class="wordArtEffect">WordArt Effect</div>
+<div class="threeDEffect">3D Effect</div>
+<div class="multiEffect">Multiple Shadow Effect</div>
+<hr>
+<h2>2. Box Shadow</h2>
+<div class="red box">RedBox</div><br><br>
+<div class="blur box">BlurBox</div><br><br>
+<div class="multi box">MultiBox</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** 수직 펼침 메뉴 **</title>
+<style>
+	* { margin:0; padding:3px; }
+	
+	ul { list-style:none; background-color:MistyRose; width:120px; }
+	
+	ul a { font-size:12pt; font-weight:bold; color:gray;
+		   text-decoration:none; line-height:20px; }
+	.title { color:black; }
+
+	ul li { background-color:Beige; width:120px; }
+
+	li ul { display:none; }
+	
+	/* .title:hover ul { display:block; } => 적용안됨 */
+	ul li:hover ul { display:block; }
+
+	/* 펼쳐진 메뉴에 마우스 hover 
+		-> 글꼴크기 1.2배, color는 green 으로 */ 
+	li ul a:hover { color:green; font-size:1.2em; }
+
+</style>
+
+</head>
+<body>
+<br><hr>
+<ul>
+	<li><a href="" class="title">Home</a>
+	<li><a href="" class="title">GoodSite</a>
+		<ul>
+			<li><a href="https://www.w3schools.com/Colors/colors_groups.asp" target="_blank">ColorPicker</a>
+			<li><a href="https://oracle.com">Oracle</a>
+			<li><a href="http://www.eclipse.org">Eclips</a>
+			<li><a href="http://tomcat.apache.org">Tomcat</a>	
+		</ul>
+	<li><a href="" class="title">Html5</a>
+		<ul>
+			<li><a href="../html01/ex00_hello.html" target="main">Hello</a>
+			<li><a href="../html01/ex02_specialCharacter.html" target="main">Special</a>
+			<li><a href="../html01/ex03_imageLink.html" target="main">Image</a>
+		</ul>
+	<li><a href="" class="title">Css3</a>
+		<ul>
+			<li><a href="./ex01_animation.html" target="main">Animation</a>
+			<li><a href="./ex02_transition.html" target="main">Transition</a>
+			<li><a href="./ex03_transform.html" target="main">Transform</a>
+		</ul>
+</ul>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Animation **</title>
+<style>
+	/* 1) animation name, 조건 설정 
+		=> HTML 태그의 style 변화를 시간 단위로 설정 가능함
+	*/
+	@keyframes bomb { 
+		from { font-size:500%; }    /* from: 시작시 */
+		to { font-size: 100%; }		/* to: 끝까지 */
+	 }
+
+	/* 2) animation 설정 */
+	h3 { animation-name : bomb;   /* 애니메이션 코드 이름 */	
+		 animation-duration: 3s;  /* 애니메이션 1회 시간은 3초 */		 
+		 animation-iteration-count : 3 ; /* 횟수, 무한(infinite)  */	
+	}
+	
+	@keyframes textColor {
+		0%  { color: blue; }   /* 0% 즉, 시작시 => from 과동일 */
+		30% { color: green; }  /* 30% 경과 시 까지 */ 
+		100% { color: red; }   /* 100% 즉, 끝까지 => to 와 동일 */
+	}
+	h1 {
+		animation-name: textColor;
+		animation-duration: 5s;
+		animation-iteration-count : infinite ;
+	}
+</style>
+
+</head>
+<body>
+<h2>** Animation 효과 **</h2>
+<hr>
+<h3>꽝!!!</h3>
+<hr>
+<pre>
+=> 꽝! 글자가 
+=> 3초동안 500%에서 시작하여 100%로 바뀌는 애니메이션입니다.
+=> 무한 반복합니다.
+</pre>
+<hr>
+<pre>
+<h1>Animation</h1>
+텍스트를 5초에 blue, green, red로 무한 반복합니다.
+</pre>
+</body>
+</html>

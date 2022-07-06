@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Join Us</title>
+<style>
+	* { margin:0; padding:0; background:WhiteSmoke; border:0px;}
+	h1 {  text-align: center; height: 100px; color:#1ddb16; line-height: 100px; font-size: 40px;}
+	#send { margin:auto; background: #1ddb16; text-decoration: none;}
+	
+	#container{width:410px; margin: 0 auto;}
+	input{width:400px; height:30px; border:2px solid lightgray; background: white;}
+	p {font-weight: bold;}
+	#year { background: white; width:150px; height: 30px; border:2px solid lightgray; }
+	#month { background: white; width:100px; height: 30px; border:2px solid lightgray;}
+	#day { background: white; width:100px; height: 30px; border:2px solid lightgray; }
+	#have { width:400px;}
+	
+	#male, #female{ width:15px; height: 15px;}
+	input[type=radio] {display: inline-block; }
+	
+	select { background: white;}
+	input:focus,select:focus {outline-color: limegreen; border-color: limegreen;}
+	#send {color:white; margin-bottom: 50px;}
+	#send:hover { cursor:pointer; background: lime;}
+
+</style>
+</head>
+<body>
+<h1><b>Join Us</b></h1>
+<form action="#" >
+<div id="container">
+	<div>
+	<p>아이디</p>
+	<input type="text" placeholder="15자 이내로 입력하세요." maxlength="15">
+	</div><br>
+	<div>
+	<p>비밀번호</p>
+	<input type="password" placeholder="소문자, 대문자, 특수문자가 모두 포함되어야 합니다.">
+	</div><br>
+	<div><p>비밀번호 재확인</p>
+	<input type="password">
+	</div><br>
+	<div><p>이름</p>
+	<input type="text">
+	</div><br>
+	<div>
+	<p>생년월일</p>
+	<input id="year" type="text" maxlength="2022" min="1910" placeholder="년(4자)" name="year">
+		<select id="month" name="month">
+		<option>1월</option><option>2월</option>
+		<option>3월</option><option>4월</option>
+		<option>5월</option><option>6월</option>
+		<option>7월</option><option>8월</option>
+		<option>9월</option><option>10월</option>
+		<option>11월</option><option>12월</option>
+		</select>
+	<input id="day" type="text" maxlength="31" min="1" placeholder="일" name="day">
+	</div><br>
+	<div>
+	<p>성별</p>
+
+	<input type="radio" name="gender" id="male"><label for="male">남성</label>
+	<input type="radio" name="gender" id="female"><label for="female">여성</label></div><br>
+	<div>
+	<p>본인확인 이메일</p>
+	<input type="text" name="email">
+	</div><br>
+	<div>
+	<p>보유기술(다중선택가능)</p>
+		 	<select id="have" multiple="multiple" size="4">
+			<option value="1">java
+			<option value="2">MySQL
+			<option value="3">Oracle
+			<option value="4">Html
+			<option value="5">CSS
+			<option value="6">Javescript
+		</select>
+	</div><br>
+	<input id="send" type="submit" value="가입하기">
+</div>
+</form>
+</body>
+</html>

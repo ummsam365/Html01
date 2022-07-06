@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** CSS 계층구조와 우선순위 **</title>
+<style>
+	body { 
+		color: blue;
+		font-size: 25pt;
+	}
+	#mom {
+		color: green;
+		font-size: 20pt;
+		font-weight: bold;
+	}
+	#jerry {
+		color: red;
+	}
+</style>
+
+</head>
+<body>
+<h2>**  CSS : Cascade Style Sheet **</h2>
+<h3>=> 종속(계층) 적인 Style Sheet</h3>
+<h3>=> 상위 Tag의 Style이 상속됨 (하위Tag 에 자동 적용됨)</h3>
+<div id="mom">
+	* 착한아들 Tom<br>
+	<div id="tom">엄마말씀을 잘들어요 ~~</div>
+	* 사춘기아들 Jerry<br>
+	<div id="jerry">내인생은 나의것 ~~</div>
+</div>
+</body>
+</html>

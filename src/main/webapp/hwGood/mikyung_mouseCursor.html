@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>마우스 커서</title>
+<style>
+		#progress:hover{
+			cursor: progress; }
+		#help:active {
+				width:300px; height:100px; background-color: pink;
+			   display:block; }
+		#disp { display:none; }
+		
+</style>
+</head>
+<body>
+<h3>마우스 커서</h3>
+아래에 마우스를 올려 보세요. 커서가 변합니다.
+<hr>
+<p style="cursor: crosshair">십자 모양 커서</p>
+<p style="cursor: help" id="help">도움말 보기</p>
+<div align="center" id="disp">
+도움이 필요하신가요?
+</div>
+<p style="cursor: pointer">포인터 모양 커서</p>
+<p id="progress"> <img src="../image/loading.gif" width="100" height="100"></p>
+<p style="cursor: n-resize">상하 크기 조절 모양 커서</p>
+</body>
+</html>

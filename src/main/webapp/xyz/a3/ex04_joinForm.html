@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Join Us</title>
+</head>
+<body>
+	<div class="form_container">
+		<div class="form_wrap">
+			<header><h1><a href="ex01_home.html">Join Us</a></h1></header>
+			<form action="#">
+				<fieldset class="form_field form_required">
+					<legend>필수입력사항</legend>
+					<div class="input_required">
+						<p>아이디</p>
+						<input type="text" name="id" id="id" placeholder="15글자 이내로 입력하세요">
+					</div>
+					<div class="input_required">
+						<p>비밀번호</p>
+						<input type="password" name="password" id="password" placeholder="소문자,대문자,특수문자가 모두 포함되어야합니다.">
+					</div>
+					<div class="input_required">
+						<p>비밀번호 재확인</p>
+						<input type="password" name="password_rep" id="password_rep">
+					</div>
+					<div class="input_required">
+						<p>이름</p>
+						<input type="text" name="name" id="name">
+					</div>
+				</fieldset>
+				<fieldset class="form_field form_optional">
+					<legend>선택입력사항</legend>
+					<div class="input_optional">
+						<p>생년월일</p>
+						<div class="grid_wrap">
+							<input type="text" name="year" id="year" placeholder="년(4자)">
+							<select name="month" id="month">
+								<option value="">-월-</option>
+								<option value="1">1월</option>
+								<option value="2">2월</option>
+								<option value="3">3월</option>
+								<option value="4">4월</option>
+								<option value="5">5월</option>
+								<option value="6">6월</option>
+								<option value="7">7월</option>
+								<option value="8">8월</option>
+								<option value="9">9월</option>
+								<option value="10">10월</option>
+								<option value="11">11월</option>
+								<option value="12">12월</option>
+							</select>
+							<input type="text" name="day" id="day" placeholder="일">
+						</div>
+					</div>
+					<div class="input_optional radio_select">
+						<p>성별</p>
+						<input type="radio" id="female" name="gender" value="female" checked><label for="female">여성</label> &nbsp;&nbsp;
+						<input type="radio" id="male" name="gender" value="male"><label for="male">남성</label>
+					</div>
+					<div class="input_optional">
+						<p>보유기술 <span>(다중선택가능)</span></p>
+						<select name="skills" id="skill_select" multiple>
+							<option value="java">Java</option>
+							<option value="mysql">MySQL</option>
+							<option value="oracle">Oracle</option>
+							<option value="html">HTML</option>
+							<option value="css">CSS</option>
+							<option value="javascript">JavaScript</option>
+						</select>
+					</div>
+				</fieldset>
+				<button type="submit">가입하기</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Label_For , Table **</title>
+</head>
+<body>
+<h2>** Label_For , Table **</h2>
+
+<form action="#" method="get">
+<table>
+	<tr><th bgcolor="yellow" align="left" height="40"><label for="id">I D</label></th>
+		<td><input type="text" name="id" id="id" size="20"></td></tr>
+	<tr><th bgcolor="yellow" align="left" height="40"><label for="password">Password</label></th>
+		<td><input type="password" name="password" id="password"></td></tr>
+	<tr><th bgcolor="yellow" align="left" height="40">성별</th>
+		<td><input type="radio" name="gender" value="f" checked id="female"><label for="female">여성</label>&nbsp;&nbsp;
+			<input type="radio" name="gender" value="m" id="male"><label for="male">남성</label></td>
+	</tr>
+	<tr><th bgcolor="yellow" align="left" height="40"><label for="birthDay">BirthDay</label></th>
+		<td><input type="date" name="birthDay" id="birthDay"></td></tr>
+	
+	<tr><td bgcolor="aqua" align="left" height="40">id 속성</td>
+		<td>현재 문서내에서 Tag를 인식할때 사용</td></tr>
+	<tr><td bgcolor="aqua" align="left" height="40">name 속성</td>
+		<td>현재 문서 밖 (주로 서버) 에서 Tag를 인식할때 사용</td></tr>
+	<tr><td bgcolor="aqua" align="left" height="40">Label_for</td>
+		<td>클릭시 커서위치(포커스)를 지정 할 수 있는 배려심 기능</td></tr>
+	
+	<tr><th height="40"></th>
+		<td><input type="submit" value="전송">&nbsp;&nbsp;
+			<input type="reset" value="취소"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

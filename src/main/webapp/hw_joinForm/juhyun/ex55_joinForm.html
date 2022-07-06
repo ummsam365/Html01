@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign Up</title>
+<!-- CSS -->
+<link href="ex55_style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<div class="illust">
+		<img src="illust2_medium.png" width="360">
+	</div>
+	<div class="form_wrap">
+	<header>
+		<h1>Sign Up</h1>
+		<p>Text description here.<br>Join us for more opportunities blah blah.<br></p>
+	</header>
+	<form>
+		<fieldset id="field_name">
+			<legend>Name</legend>
+			<input type="text" name="name" id="name" placeholder="Enter your full name">
+		</fieldset>
+		<fieldset id="field_psw">
+			<legend>Password</legend>
+			<input type="password" name="password" id="password" placeholder="Enter your password"><br>
+			<input type="password" name="password" id="password" placeholder="Repeat your Password">
+		</fieldset>
+		<fieldset id="field_email">
+			<legend>Email</legend>
+			<input type="text" name="email" id="email" placeholder="Email">&nbsp; @ &nbsp;
+			<select name="email_select" id="email_select">
+				<option value="">-SELECT-</option>
+				<option value="gmail">gmail.com</option>
+				<option value="naver">naver.com</option>
+				<option value="outlook">outlook.com</option>
+				<option value="yahoo">yahoo.com</option>
+				<option value="webmail">webmail.co.kr</option>
+			</select>
+		</fieldset>
+		<fieldset id="field_gender">
+			<legend>Gender</legend>
+			<input type="radio" name="gender" value="f" id="female" checked><label for="female">Female</label> &nbsp;&nbsp;
+			<input type="radio" name="gender" value="m" id="male"><label for="male">Male</label> &nbsp;&nbsp;
+			<input type="radio" name="gender" value="o" id="g_other"><label for="other">Other</label>
+		</fieldset>
+		<fieldset id="field_interest">
+			<legend>What are you looking for?</legend>
+			<input type="checkbox" name="interest" value="1" id="movie"><label for="movie">Movies</label> &nbsp;&nbsp;
+			<input type="checkbox" name="interest" value="2" id="tv"><label for="tv">TV Shows</label> &nbsp;&nbsp;
+			<input type="checkbox" name="interest" value="3" id="art"><label for="art">Art & Design</label>  &nbsp;&nbsp;
+			<input type="checkbox" name="interest" value="4" id="i_other"><label for="i_other">Other</label>
+		</fieldset>
+		<hr>
+		<fieldset>
+			<legend>About</legend>
+			<textarea id="about" placeholder="Tell us about yourself"></textarea>
+		</fieldset>
+		<div id="button_control">
+			<input type="submit" value="Sign Up Now" class="button" id="submit">  &nbsp;
+			<input type="button" value="Log In" class="button">  &nbsp;
+			<input type="reset" value="Reset" class="button">
+		</div>
+	</form>
+	</div>
+</div>
+</body>
+</html>

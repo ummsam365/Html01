@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Programmer" content="김지후">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+<title>** Hello **</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: 'Black Han Sans', sans-serif;
+        text-decoration: none;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container {
+        width: 500px;
+        height: 70%;
+        margin: 0 auto;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: help;
+    }
+
+    @keyframes welcome {
+        to {
+            color: greenyellow;
+            background-color: #000;
+            padding: 30px;
+        }
+        from {
+            color: #fff;
+        }
+    }
+
+    h1 {
+        animation-name: welcome;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+
+</style>
+</head>
+<body>
+    <div id="container">
+        <h1>WELCOME</h1>
+    </div>
+</body>
+</html>

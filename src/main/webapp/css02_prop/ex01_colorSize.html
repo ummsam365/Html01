@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Color , Size, Degree **</title>
+<style>
+	/* h3 에 차례대로 Red Color 4가지 방법으로 적용 
+		=> 순서(index값) 주의 */
+	h3:nth-child(2) { color:red; }
+	h3:nth-child(3) { color:#00ff00; }
+	h3:nth-child(4) { color:rgb(0, 0, 255); }
+	h3:nth-child(5) { color:rgb(0%, 0%, 0%); }
+	
+	/* Size Test 
+		1) px (pixels)
+		=> 해상도에 따른 1점을 단위로 하는 절대크기
+		=> default 글자크기 (기본크기) : Font size 3 = 16px  
+	#p1 {}
+	#p2 { font-size: 16px; }
+	#p3 { font-size: 24px; }
+	#p4 { font-size: 32px; }
+	*/
+	/*	2) pt: point (1 pt = 1/72 inch), 절대크기
+		=> default 글자크기 (기본크기) : Font size 3 = 12pt 
+	#p1 {}
+	#p2 { font-size: 12pt; }
+	#p3 { font-size: 24pt; }
+	#p4 { font-size: 36pt; }
+	*/
+	/*	3) em: 배수 (기본 크기에 대한 상대적 크기) 
+	#p1 {}
+	#p2 { font-size: 1.0em; }
+	#p3 { font-size: 1.5em; }
+	#p4 { font-size: 2.0em; }
+	*/
+	/*	4) %: 백분율 (기본 크기에 대한 상대적 크기)  
+	#p1 {}
+	#p2 { font-size: 100%; }
+	#p3 { font-size: 150%; }
+	#p4 { font-size: 200%; }
+	*/
+	/* 5) Total
+	=> 모두 동일한 기본크기로 출력 되도록 적용하기 
+	   nth-child() 사용 */
+	 p:nth-child(10) { font-size:16px; }  
+	 p:nth-child(11) { font-size:12pt; }  
+	 p:nth-child(12) { font-size:1pc; }  
+	 p:nth-child(13) { font-size:1.0em; } 
+	 p:nth-child(14) { font-size:100%; }
+	 
+	 div { transform:rotate(10deg); }
+</style>
+
+</head>
+<body>
+<h2>** Color Test **</h2>
+<h3>1) 색상이름으로 표기</h3>
+<h3>2) 16진수로 표기</h3>
+<h3>3) RGB 값으로 표기 -> 10진수</h3>
+<h3>4) RGB 값으로 표기 -> 백분율(%)</h3>
+<h2>** Color 투명도</h2>
+<h3>=> opacity: 0 ~ 1 사이의 소숫점 숫자값 (0.8->80%)</h3>
+<hr>
+<h2>** Size 단위 **</h2>
+<p id="p1"> 1) px: pixels (a dot on the computer screen), 크기, 위치</p>
+<p id="p2"> 2) pt: point (1 pt = 1/72 inch), 절대크기, 글자크기</p>
+<p id="p3"> 3) pc: pica(또는 picas, 파이카) 행의 폭으로 글자크기를 나타내는 단위 -> 1pc는 12pt</p>
+<p id="p4"> 4) em: 1em 은 현재 폰트의 크기와 같습니다. 
+            _______2em 은 현재 폰트 크기의 2배 크기를 의미합니다. 
+            _______만약 현재폰트(Parent Tag 기준) 의 크기가 12pt이면 2em은 24pt 크기에 해당합니다.</p>
+<p id="p5"> 5) %: 비율</p>
+<h2> ** Degree(각도) : deg **</h2>
+<br><br>
+<div>
+=> transform:rotate(10deg)<br>
+=> 시계방항으로 10도 회전 
+</div>
+</body>
+</html>

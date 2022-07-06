@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Animation</title>
+<style>
+	* {
+		padding: 10px;
+	}
+	
+	@keyframes bomb {
+		from {
+			font-size: 100%;
+		}
+		
+		to {
+			font-size: 500%;
+		}
+	}
+	
+	/* 2) animation 설정 */
+	h3 {
+		animation-name: bomb;
+		animation-duration: 3s;
+		animation-iteration-count: infinite; /* 횟수, 무한 (infinite) */
+		animation-direction: alternate;
+	}
+	
+	@keyframes textColour {
+		0% { /* 0% 즉, 시작시 => from과 동일 */
+			color: blue;
+		}
+		30% { /* 30% 경과 시 까지 */
+			color: green;
+		}
+		100% { /* 100% 즉, 끝까지 => to와 동일 */
+			color: red;
+		}
+	}
+	
+	p span {
+		font-size: 48px;
+		font-weight: bold;
+		animation-name: textColour;
+		animation-duration: 5s;
+		animation-iteration-count: infinite; 
+		animation-direction: alternate;
+	}
+</style>
+</head>
+<body>
+	<h2>Animation 효과</h2>
+	<hr>
+	
+	<h3>꽝!!!</h3>
+	<hr>
+	<pre>
+	=> 꽝! 글자가
+	=> 3초동안 500%에서 시작하여 100%로 바뀌는 애니메이션입니다.
+	=> 무한 반복합니다.
+	</pre>
+	
+	<hr>
+	<p><span>span</span><br>텍스트를 5초에 blue, green, red로 무한 반복합니다.</p>
+</body>
+</html>

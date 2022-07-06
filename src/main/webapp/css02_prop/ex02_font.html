@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Font, aTag, Button **</title>
+<link rel="stylesheet" type="text/css" href="../css01/myStyle.css">
+<style>
+	* { font-family: fantasy; } /* 모든 Tag */
+	.f1 { font-family: Arial; font-size: small; text-decoration: underline;	}
+	.f2 { font-family: test, myFont, Wide Latin, 맑은 고딕;   
+		  /* 없는 글꼴은 통과, 먼저 찾은 글꼴이 적용되고, 모두 없으면 브라우저 기본글꼴 적용됨 */
+		  font-size: x-large; text-decoration: overline; }
+	.f3 { font-family: 굴림, fantasy, 돋움; font-size: 12pt; font-weight: bold; }
+	.f4 { font-style: italic; font-stretch: wider; text-decoration: line-through; }
+							/* font-stretch : 글자의 장평,  line-through : 취소선 */
+</style>
+</head>
+<body>
+<h2>** Font **</h2>
+<p class="f1">Font Test 1 : f1 </p>
+<p class="f2 f1">Font Test 2 : f1, f2 
+		-> 동일속성 의 경우 뒤의속성이 적용됨
+		-> 뒤의속성: 뒤에 작성된 코드</p>
+<p class="f3">Font Test 3 : f3 </p>
+<p class="f3 f4">Font Test 4 : f3, f4 </p>
+
+<h2>** Button & LineHeight **</h2>
+=> 외부 문서에 작성 (myStyle.css)<br>
+<div class="button f1">
+	<a href="https://www.naver.com">Naver</a>	
+</div>
+<div class="button f1">
+	<span>Naver</span>	
+</div>
+<pre>
+=> button 내부의 aTag도 외부문서에 정의된 button 속성과
+   내부에 정의된 f1 속성에 영향을 받는데 우선순위는 내부에 정의된 f1이 우선적용됨
+   그래서 밑줄이 다시 표시됨,
+=> 그런데 button 내부의 aTag 는 글꼴은 Parent 속성의 영향을 받지않고
+   외부문서에 a Tag 정의된 글꼴 속성을 유지함.
+=> aTag 가아닌 span 으로 Test 해도 동일결과
+=> 결론 : 글꼴은 Tag에 직접 적용된 속성이 우선 한다.  
+=> 만약 myStyle.css 의 aTag 에 글꼴 속성이 없다면,
+   f1 (parent 에 적용된 속성) 이 아닌 * 에 정의된 글꼴이 직접적용된 글꼴에 해당하므로 적용됨
+</pre>
+
+</body>
+</html>

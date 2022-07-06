@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Inline , Block **</title>
+<style>
+	/* display 속성을 inline / inline-block 적용 하면서 차이점 확인하기  
+		=> div, span 모두 block, inline, inline-block 적용가능 
+		=> div 에는 inline , span 에는 block 을 적용해본다  
+		=> inline-block 은 배치는 inline 이고 block 처럼 크기 적용가능 */
+	div { background: pink; display: inline-block; width: 150px; height:70px; }
+	span { background: aqua; width: 60px; height:30px; display:block; }
+	
+	#none span { display: none; } 
+	/* display: none 과 visible: hidden 과 	비교  */
+	#visible { visibility: hidden;}  /* hidden / visible / collapse */
+	#block span { display: block; }
+	#inline span { display: inline; }
+	#inlineBlock span { display: inline-block; }
+	
+</style>
+
+</head>
+<body>
+<h2>** Inline , Block, Display **</h2>
+=> Block은 width, height 크기와 줄바꿈 적용<br>
+=> Inline은 width, height 크기 적용없고, 내부의 컨텐츠 영역만을 크기로 함 
+=> Inline-Block 은 배치는 inline 이고 block 처럼 크기 적용가능
+<hr>
+<h2>Div : Block Box</h2>
+<div>Div1</div>
+<div>Div2</div>
+<div>Div3</div>
+<hr>
+<h2>Span : Inline Box</h2>
+=> only Span<br>
+<span>span0</span><span>span0</span><span>span0</span>
+<br><hr>
+=> Span in Div: Div는 Block, Span은 Inline<br>
+<div id="none">* noneTest *<span>span1</span><span>span2</span></div>
+<div id="visible">* visibility:hidden *<span>visible1</span><span>visible2</span></div>
+<div id="block">* block *<span>span3</span><span>span4</span></div>
+<div id="inline">* inline *<span>span5</span><span>span6</span></div>
+<div id="inlineBlock">* inlineBlock *<span>span5</span><span>span6</span></div>
+<br><hr>
+<pre>
+** visibility: hidden
+	=> 화면에서만 요소를 감출 뿐 크기는 그대로 유지하기 때문에 문서 배치에 영향을 미침
+	=> hidden / visible / collapse
+** float : 수평정렬에 많이 이용	
+</pre>  
+
+</body>
+</html>

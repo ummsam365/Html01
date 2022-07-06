@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body { background-color: yellow; 	}
+h2 { color: navy; }
+	/* font-size: 30pt; */
+p { color: black; }	
+
+/* Link Button 만들기 */
+.button {
+	width:140px; height:50px; background-color: aqua;
+	border: 10px solid lightgray; /* 단축속성: 두께 style color */
+	border-radius:20px; text-align: center;
+	}	
+/* 모든 a Tag	 */
+a { color: navy; text-decoration: none; font-family:Wide Latin;  } 
+	
+/* button 에 속해있는 모든 aTag */
+.button a { line-height:50px; }
+
+/* Button의 child인 a Tag 에 마우스가 닿으면 글씨 blue, 1.2배, 클릭하면 글씨 green */
+.button > a:hover { color:blue; font-size:1.2em; }
+.button > a:active { color:green; }
+

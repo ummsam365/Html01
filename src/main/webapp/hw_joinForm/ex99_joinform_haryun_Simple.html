@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Join Us</title>
+	<style>
+		* {
+			padding: 0; margin: 0;
+		}
+		#logo {
+			font-size: 36pt; font-weight: bold;  color: #2F4F4F; text-align: center; 
+		}
+		body {
+			background-color: #F5F5F5; width: 400px; height: 100%; margin: 0 auto;
+		} 
+		div {
+		 align-content: center;  
+		}
+		input {
+			width: 400px; height: 30px; border-style: 1px solid gray;  margin-bottom: 20px; 
+		}
+		span {
+			font-size: 12pt;
+		}
+		.sub {
+			font-size: 10pt; color: #696969;
+		}
+		#female, #male { width: 15px; height: 15px; } 
+		
+		.year {
+			width: 140px; height: 30px;
+		}
+		.month{
+			width: 100px; height: 30px;
+		} 
+		.day {
+			width: 140px; height: 30px; 
+		}
+		select { 
+			box-sizing: content-box; width: 400px; height: 100px; font-size: 12pt;
+		} 
+		.button {
+			width: 400px; height: 50px; background-color: #2F4F4F; color: white;  border: 0px; font-size: 12pt;
+			cursor: pointer; 
+		}
+		input:focus, select:focus {
+			outline-color: #98FB98;
+		}
+		
+	</style>
+
+</head>
+<body>
+<div id="logo">
+	<p>Join Us</p>
+</div>
+
+<form action="#" method="get">
+	<div>
+		<span><b>아이디</b></span> <br>
+		<input type="text" class="id" size="15" placeholder="15자 이내로 입력하세요.">
+	</div>
+		
+	<div>
+		<span><b>비밀번호</b></span> <br>
+		<input type="password" class="password" size="50" placeholder="비밀번호는 영어, 숫자 포함입니다.">
+	</div>
+	
+	<div>
+		<span><b>비밀번호 확인</b></span> <br>
+		<input type="password" class="password" size="50">
+	</div>
+	
+	<div>
+		<span><b>이름</b></span> <br>
+		<input type="text" class="name" size="15">
+	</div>
+
+<!-- 	<div>
+		<span><b>생년월일</b></span> <br>
+		<input type="date" class="birth">
+	</div> -->
+	
+	<div class="birth">
+		<span><b>생년월일</b></span> <br>
+		<input type="text" class="year" placeholder="년도">
+		<select size="1" class="month">
+		<option value="1">1월</option>
+		<option value="1">2월</option>
+		<option value="1">3월</option>
+		<option value="1">4월</option>
+		<option value="1">5월</option>
+		<option value="1">6월</option>
+		<option value="1">7월</option>
+		<option value="1">8월</option>
+		<option value="1">9월</option>
+		<option value="1">10월</option>
+		<option value="1">11월</option>
+		<option value="1">12월</option>
+		</select>
+		<input type="text" class="day" placeholder="일">
+	</div>
+	
+	<div>
+		<span><b>성별</b></span> <br>
+		<input type="radio" name="gender" id="female" value="f"checked="checked"><label for="female">여자</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="gender" id="male" value="m"><label for="male">남자</label> 
+	</div>
+	
+	<div>
+		<span><b>본인확인 이메일</b></span> <span class="sub">(선택)</span><br>
+		<input type="text"  size="50" class="email" placeholder="이메일을 입력하세요.">
+	</div>
+	
+	<div>
+	<span><b>보유기술</b></span> <span class="sub">(다중 선택 가능)</span><br>
+	<select multiple="multiple" size="5" class="skill">
+		<option value="A">HTML5</option>
+		<option value="B">Css3</option>
+		<option value="C">JavaScript</option>
+		<option value="D">Java</option>
+		<option value="E">Oracle</option>
+	</select> <br><br>
+	</div>
+	
+	<div>
+		<input type="submit" value="가입하기" class="button">
+	</div>
+</form>
+
+</body>
+</html>

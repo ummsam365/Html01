@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.test1 { background: goldenrod;
+		 padding: 10px 10px 10px 30px;
+		 list-style-position: outside; 
+		 /*  inside / outside -> 마커위치 li 의 내/외부 */
+		 list-style-type: decimal-leading-zero; 
+		 /* list-style-image: url("../image/aaa.gif"); 
+		  image size 조절방법 없으므로 적당한크기의 이미지 사용권장 */
+	 }
+	.test1 li { background: LemonChiffon ;
+			margin-bottom: 5px; 
+	 }
+	/* ** Menu 만들기 ** 
+	=>menubar 추가, 초기화 */
+	 
+	* { margin:0; padding:0; }
+	#menubar { background:olive; width:100%; }
+	#menubar ul li { display:inline-block; list-style:none; padding:0px 15px; width:50px; }
+	#menubar ul li a { color:white; text-decoration:none; }
+	#menubar ul li a:hover { color:yellow; }
+	
+</style>
+
+</head>
+<body>
+<h2>** Test1 ListStyle **</h2>
+<ul class="test1">
+	<li>Home</li>
+	<li>Espresso</li>
+	<li>Cappuccino</li>
+	<li>CafeLatte</li>
+</ul>
+<br><hr><br>
+<h2>** Test2 Menu에 활용 **</h2>
+<nav id="menubar">
+<ul>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Espresso</a></li>
+	<li><a href="#">Cappuccino</a></li>
+	<li><a href="#">CafeLatte</a></li>
+</ul>
+</nav>
+
+</body>
+</html>

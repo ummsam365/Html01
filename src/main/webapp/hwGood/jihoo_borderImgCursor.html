@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>**  border img, mouseCursor  **</title>
+ <!-- 작성자 : 김지후 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<style>
+
+	* {
+		user-select : none;
+	}
+	/* border_image */
+	.border_box {
+		width: 100%;
+		display: flex;
+	}
+	
+	p {
+		background-color: #ff6b6b;
+		width: 200px;
+		height: 150px;
+		margin: 20px;
+		border : 20px solid #feca57;
+		text-align: center;
+		font-size: 30px;
+		font-family: 'Jua', sans-serif;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#round {
+		border-image : url('https://mdn.mozillademos.org/files/4127/border.png') 30 round;
+	}
+	
+	#repeat {
+		border-image: url('https://mdn.mozillademos.org/files/4127/border.png') 30 repeat;
+	}
+	
+	#stretch {
+		border-image: url('https://mdn.mozillademos.org/files/4127/border.png') stretch 30;
+	}
+	
+	/* box_image end */
+	
+	/* mouseCursor */
+	
+	.csbox {
+		width: 100%;
+		display: flex;
+	}
+	
+	.box {
+		width: 150px;
+		height: 150px;
+		background-color: #5f27cd;
+		margin: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 15px;
+		color: #fff;
+		font-weight: bold;
+		transition : all .5s ease; 
+		/* all: 모든프로퍼티에 적용, 
+		   ease: 더 스무스? 하게 애니메이션이 동작하도록함. 
+		         기본 값. 느리게 시작해서 점점 빨라지다가 다시 느려지면서 종료 */
+	}
+	
+	.box:hover {
+		background-color: #1dd1a1;
+	}
+	
+	.box2 {
+		cursor: crosshair;
+	}
+	
+	.box3 {
+		cursor: pointer;
+	}
+	
+	.box4 {
+		cursor: move;
+	}
+	
+	.box5 {
+		cursor: copy;
+	}
+	
+	.box6 {
+		cursor: help;
+	}
+	
+	.box7 {
+		cursor: progress;
+	}
+	
+	.box8 {
+		cursor: text;
+	}
+
+	.box9 {
+		cursor: wait;
+	}
+	
+	.box10 {
+		cursor: zoom-in;
+	}
+
+	.box11 {
+		cursor: zoom-out;
+	}
+	
+	.box12 {
+		cursor: n-resize;
+	}
+	
+	.box13 {
+		cursor: e-resize;
+	}
+	
+	.box14 {
+		cursor: ne-resize;
+	}
+</style>
+</head>
+<body>
+	<h2>1. border_image</h2>
+	<div class="border_box">
+	<p id="round">round_style</p>
+	<p id="repeat">repeat_style</p>
+	<p id="stretch">stretch_style</p>
+	</div>
+	<hr>
+	<h2>2. mouseCursor</h2>
+	<div class="csbox">
+		<div class="box box1">auto / default</div>
+		<div class="box box2">crosshair</div>
+		<div class="box box3">pointer</div>
+		<div class="box box4">move</div>
+		<div class="box box5">copy</div>
+		<div class="box box6">help</div>
+		<div class="box box7">progress</div>
+	</div>
+	<div class="csbox">
+		<div class="box box8">text</div>
+		<div class="box box9">wait</div>
+		<div class="box box10">zoom-in</div>
+		<div class="box box11">zoom-out</div>
+		<div class="box box12">n-resize</div>
+		<div class="box box13">e-resize</div>
+		<div class="box box14">ne-resize</div>	
+	</div>
+</body>
+</html>
